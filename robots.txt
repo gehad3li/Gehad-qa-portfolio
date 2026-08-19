@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gehad3li.github.io/Gehad-qa-portfolio/sitemap.xml

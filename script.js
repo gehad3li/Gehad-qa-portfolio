@@ -11,9 +11,9 @@
 
 const CONFIG = {
   social: {
-    github: "https://github.com/gehad3li/Gehad-qa-portfolio",
-    linkedin: "https://www.linkedin.com/in/gehadali/",
-    email: "gehadali.egy@gmail.com",
+    github: "https://github.com/your-github-username",
+    linkedin: "https://www.linkedin.com/in/your-linkedin-username",
+    email: "your.email@example.com",
   },
   // Shown in the footer. Update by hand whenever you make a real update.
   lastUpdated: "August 2026",

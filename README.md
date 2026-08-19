@@ -17,6 +17,9 @@ gehad-portfolio/
 ├── index.html    # Page structure and content (sections)
 ├── styles.css    # All styling (design tokens at the top)
 ├── script.js     # Editable data (skills, projects, journey, certs) + rendering
+├── og-image.png  # Social share preview image (1200×630)
+├── robots.txt    # Crawler rules + sitemap reference
+├── sitemap.xml   # Sitemap for GitHub Pages / search engines
 └── README.md
 ```
 

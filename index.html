@@ -7,10 +7,24 @@
   <meta name="description" content="Gehad's QA portfolio — documenting a hands-on journey from software testing fundamentals toward a first role as a Software QA Engineer." />
   <meta name="theme-color" content="#1B2430" />
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://gehad3li.github.io/Gehad-qa-portfolio/" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gehad3li.github.io/Gehad-qa-portfolio/" />
   <meta property="og:title" content="Gehad — Aspiring Software QA Engineer" />
   <meta property="og:description" content="Building a foundation in Software Testing and QA, one project and course at a time." />
+  <meta property="og:image" content="https://gehad3li.github.io/Gehad-qa-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Gehad — Software QA Portfolio" />
+
+  <!-- Twitter Card (reuses the same OG image) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gehad — Aspiring Software QA Engineer" />
+  <meta name="twitter:description" content="Building a foundation in Software Testing and QA, one project and course at a time." />
+  <meta name="twitter:image" content="https://gehad3li.github.io/Gehad-qa-portfolio/og-image.png" />
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231B2430'/%3E%3Cpath d='M28 52l16 16 28-32' stroke='%233F8F76' stroke-width='9' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
@@ -19,6 +33,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data: Person / ProfilePage, built only from content already on this page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Gehad — Software QA Portfolio",
+    "url": "https://gehad3li.github.io/Gehad-qa-portfolio/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Gehad",
+      "description": "Aspiring Software QA Engineer currently building a foundation in software testing and quality assurance through structured learning and practical projects.",
+      "url": "https://gehad3li.github.io/Gehad-qa-portfolio/",
+      "knowsAbout": ["Software Testing Fundamentals", "Manual Testing"]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -53,48 +84,27 @@
     <!-- HERO -->
     <section class="hero">
       <div class="wrap hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow mono"><span class="status-dot status-dot--progress" aria-hidden="true"></span>status: learning in public</p>
-          <h1 class="hero-title">
-            Quality is a
-            <span class="hero-title-highlight">practice.</span>
-            <span class="hero-title-sub">Gehad — aspiring Software QA Engineer</span>
-          </h1>
-          <p class="hero-desc">
-            Building a practical foundation in software testing through focused study,
-            intentional practice, and well-documented projects.
-          </p>
+        <p class="eyebrow mono"><span class="status-dot status-dot--progress" aria-hidden="true"></span>status: learning in public</p>
+        <h1 class="hero-title">
+          Gehad
+          <span class="hero-title-sub">Aspiring Software QA Engineer</span>
+        </h1>
+        <p class="hero-desc">
+          Currently building my foundation in Software Testing and Quality Assurance
+          through structured learning and practical projects.
+        </p>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">→</span></a>
-            <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-ghost">
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#" data-social="github" target="_blank" rel="noopener" class="btn btn-ghost">
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.19-3.37-1.19-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
             GitHub
-            </a>
-            <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="btn btn-ghost">
+          </a>
+          <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="btn btn-ghost">
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.44 13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.82c.04.94 0 12 0 12h3.38v-6.7c0-.36.03-.72.13-.97.29-.72.94-1.47 2.04-1.47 1.44 0 2.02 1.1 2.02 2.71V20.5h3.38l.03-6.6Z"/></svg>
             LinkedIn
-            </a>
-          </div>
+          </a>
         </div>
-
-        <aside class="qa-panel" aria-label="Current QA learning dashboard">
-          <div class="qa-panel-head">
-            <span class="mono">CURRENT TEST RUN</span>
-            <span class="panel-live"><i aria-hidden="true"></i> active</span>
-          </div>
-          <div class="qa-panel-body">
-            <p class="qa-panel-label mono">focus area</p>
-            <p class="qa-panel-value">Manual testing fundamentals</p>
-            <div class="qa-progress"><span></span></div>
-            <div class="qa-panel-list">
-              <div><span class="status-dot status-dot--progress" aria-hidden="true"></span><span>Test case design</span><small>Learning</small></div>
-              <div><span class="status-dot status-dot--planned" aria-hidden="true"></span><span>HeronSignal practice</span><small>Next</small></div>
-              <div><span class="status-dot status-dot--planned" aria-hidden="true"></span><span>API testing</span><small>Queued</small></div>
-            </div>
-          </div>
-          <div class="qa-panel-foot mono">QA / 01 — BUILDING THE BASICS</div>
-        </aside>
       </div>
     </section>
 
