@@ -111,6 +111,8 @@ body { background: #f8fafc; }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; max-width: 760px; }
   .qa-panel { width: min(100%, 460px); transform: none; }
+  .hero { padding-block: 76px 72px; }
+  .hero-copy { max-width: 620px; }
 }
 
 /* ---------- Reset ---------- */
@@ -593,7 +595,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
   .skills-grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 860px) {
   .nav-toggle { display: block; }
   .primary-nav {
     position: absolute;
