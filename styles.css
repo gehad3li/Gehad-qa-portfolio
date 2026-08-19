@@ -624,3 +624,25 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn { justify-content: center; }
 }
+
+/* Keep the refreshed hero rules after the original component rules. */
+@media (min-width: 861px) {
+  :root { --wrap: 1280px; }
+  .hero { padding-block: 112px 100px; border-bottom: 0; }
+  .hero-inner {
+    max-width: var(--wrap);
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(400px, .88fr);
+    align-items: center;
+    gap: clamp(64px, 7vw, 128px);
+  }
+  .hero-title { font-size: clamp(3.4rem, 5vw, 5.25rem); line-height: .96; letter-spacing: -.055em; }
+  .hero-title-sub { margin-top: 20px; font-size: clamp(1rem, 1.6vw, 1.28rem); }
+  .qa-panel { width: 100%; }
+}
+
+@media (max-width: 860px) {
+  .hero { padding-block: 76px 72px; border-bottom: 0; }
+  .hero-inner { max-width: 760px; display: grid; grid-template-columns: 1fr; gap: 44px; }
+  .hero-title { font-size: clamp(2.6rem, 8vw, 4rem); line-height: .98; }
+}
