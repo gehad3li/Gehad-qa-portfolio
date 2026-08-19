@@ -20,8 +20,24 @@ gehad-portfolio/
 ├── og-image.png  # Social share preview image (1200×630)
 ├── robots.txt    # Crawler rules + sitemap reference
 ├── sitemap.xml   # Sitemap for GitHub Pages / search engines
+├── llms.txt      # Short AI-readable summary of the site, for AI assistants/crawlers
 └── README.md
 ```
+
+## Before you deploy — two TODOs
+
+1. **HeronSignal public key.** Near the end of `index.html`, replace
+   `"YOUR_HERONSIGNAL_PUBLIC_KEY"` with the real public key from your
+   HeronSignal dashboard (Dashboard → Install → Web). Until you do, the
+   tracker script loads but won't report any data.
+2. **Real LinkedIn URL and email.** `CONFIG.social.linkedin` and
+   `CONFIG.social.email` in `script.js` still hold placeholders, and the
+   LinkedIn/email links in `index.html` still point at `#` directly in the
+   markup (the GitHub links were hardcoded to `https://github.com/gehad3li`,
+   but LinkedIn/email couldn't be guessed). Update both the `CONFIG` object
+   *and* the matching `href="#"` occurrences in `index.html` once you have
+   the real values — search for `data-social="linkedin"` and
+   `data-social="email"`.
 
 ## Running it locally
 

@@ -11,9 +11,9 @@
 
 const CONFIG = {
   social: {
-    github: "https://github.com/your-github-username",
-    linkedin: "https://www.linkedin.com/in/your-linkedin-username",
-    email: "your.email@example.com",
+    github: "https://github.com/gehad3li",
+    linkedin: "https://www.linkedin.com/in/your-linkedin-username", // TODO: replace with your real LinkedIn URL
+    email: "your.email@example.com", // TODO: replace with your real email
   },
   // Shown in the footer. Update by hand whenever you make a real update.
   lastUpdated: "August 2026",
@@ -141,6 +141,35 @@ function wireNavToggle() {
     link.addEventListener("click", () => {
       nav.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+/**
+ * HeronSignal funnel events for this portfolio's real calls to action.
+ * Safe, non-sensitive payloads only (cta name + page location) — see
+ * https://heronsignal.com/llms.txt for the event() payload guidelines.
+ * No-ops silently if the tracker hasn't loaded (ad blockers, offline, etc).
+ */
+function wireAnalyticsEvents() {
+  const track = (cta, location) => {
+    window.heronsignal?.event("cta_click", { cta, location });
+  };
+
+  const bindings = [
+    { selector: '.hero-actions a[href="#projects"]', cta: "view_projects", location: "hero" },
+    { selector: '.hero-actions a[data-social="github"]', cta: "github", location: "hero" },
+    { selector: '.hero-actions a[data-social="linkedin"]', cta: "linkedin", location: "hero" },
+    { selector: '.nav-cta[data-social="github"]', cta: "github", location: "nav" },
+    { selector: '#github .btn[data-social="github"]', cta: "github", location: "github_section" },
+    { selector: '.contact-card[data-social="linkedin"]', cta: "linkedin", location: "contact" },
+    { selector: '.contact-card[data-social="github"]', cta: "github", location: "contact" },
+    { selector: '.contact-card[data-social="email"]', cta: "email", location: "contact" },
+  ];
+
+  bindings.forEach(({ selector, cta, location }) => {
+    document.querySelectorAll(selector).forEach((node) => {
+      node.addEventListener("click", () => track(cta, location));
     });
   });
 }
@@ -314,6 +343,7 @@ function renderFooter() {
 document.addEventListener("DOMContentLoaded", () => {
   wireSocialLinks();
   wireNavToggle();
+  wireAnalyticsEvents();
   renderSkills();
   renderProjects();
   renderJourney();
