@@ -11,9 +11,10 @@
 
 const CONFIG = {
   social: {
-    github: "https://github.com/gehad3li",
-    linkedin: "https://www.linkedin.com/in/your-linkedin-username", // TODO: replace with your real LinkedIn URL
-    email: "your.email@example.com", // TODO: replace with your real email
+  github: "https://github.com/gehad3li",
+  linkedin: "https://www.linkedin.com/in/gehadali/",
+  email: "mailto:Gehadali.egy@gmail.com"
+}
   },
   // Shown in the footer. Update by hand whenever you make a real update.
   lastUpdated: "August 2026",
