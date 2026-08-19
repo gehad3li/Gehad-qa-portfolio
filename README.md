@@ -9,13 +9,14 @@ certificates are completed.
 
 ## File structure
 
+All files sit in the repository root (this is what GitHub Pages expects
+when deploying from the root of `main`):
+
 ```
 gehad-portfolio/
-├── index.html        # Page structure and content (sections)
-├── css/
-│   └── styles.css    # All styling (design tokens at the top)
-├── js/
-│   └── script.js     # Editable data (skills, projects, journey, certs) + rendering
+├── index.html    # Page structure and content (sections)
+├── styles.css    # All styling (design tokens at the top)
+├── script.js     # Editable data (skills, projects, journey, certs) + rendering
 └── README.md
 ```
 
@@ -42,7 +43,7 @@ npx serve .
 
 ## How to update the site as you learn
 
-Almost everything you'll want to change lives in **`js/script.js`**, at the
+Almost everything you'll want to change lives in **`script.js`**, at the
 top, in a clearly marked `CONFIG / DATA` block. You shouldn't need to touch
 the HTML or CSS for routine updates.
 
