@@ -86,10 +86,10 @@ const CERTIFICATES = [];
 /** Courses / certifications on the roadmap but not finished yet. */
 const PLANNED_CERTIFICATES = [
   { name: "Foundations of Software Testing and Validation", provider: "Coursera" },
-  { name: "Manual Testing Course", provider: "" },
-  { name: "The Complete 2026 Software Testing Bootcamp", provider: "" },
+  { name: "Manual Testing Course", provider: "Udemy" },
+  { name: "The Complete 2026 Software Testing Bootcamp", provider: "Udemy" },
   { name: "Software Testing Diploma", provider: "Route Academy" },
-  { name: "ISTQB Foundation", provider: "if completed" },
+  { name: "ISTQB Foundation", provider: "Planned" },
 ];
 
 /* ---------- Helpers ---------- */
