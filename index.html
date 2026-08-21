@@ -34,6 +34,13 @@
 
   <link rel="stylesheet" href="styles.css" />
 
+  <script>
+    window.heronsignalConfig = {
+      publicKey: "pk_KbmDm5b9SbmBzBxLiESMaQA1IXWqfMpV"
+    };
+  </script>
+  <script src="https://api.heronsignal.com/tracker.js" async></script>
+
   <!-- Structured data: Person / ProfilePage, built only from content already on this page -->
   <script type="application/ld+json">
   {
@@ -255,21 +262,5 @@
   </footer>
 
   <script src="script.js"></script>
-
-  <!--
-    HeronSignal real-user monitoring.
-    Replace "YOUR_HERONSIGNAL_PUBLIC_KEY" below with the public key from your
-    HeronSignal dashboard (Dashboard → Install → Web). This key is public by
-    design (it's meant to ship in browser HTML) — do not put a secret/server
-    token here.
-  -->
-  <script>
-    window.heronsignalConfig = {
-      publicKey: "YOUR_HERONSIGNAL_PUBLIC_KEY",
-      service: "gehad-qa-portfolio",
-      environment: "production"
-    };
-  </script>
-  <script src="https://api.heronsignal.com/tracker.js" async></script>
 </body>
 </html>
