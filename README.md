@@ -3,6 +3,11 @@
 A simple, honest, one-page portfolio documenting Gehad's journey from software
 testing fundamentals toward a first role as a Software QA Engineer.
 
+Visual style: dark navy/charcoal, muted teal (also used as the "pass" status
+color) with a dusty-rose secondary accent, glass cards, restrained glow and
+motion. Content and structure are unchanged from earlier versions — this was
+a visual redesign only.
+
 No build tools, no frameworks — plain HTML, CSS and JavaScript, so it's easy
 to open, understand, and keep updating as new skills, projects and
 certificates are completed.

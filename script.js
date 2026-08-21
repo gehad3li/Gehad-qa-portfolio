@@ -12,7 +12,7 @@
 const CONFIG = {
   social: {
     github: "https://github.com/gehad3li",
-    linkedin: "https://www.linkedin.com/in/gehadali/",
+    linkedin: "https://www.linkedin.com/in/your-linkedin-username", // TODO: replace with your real LinkedIn URL
     email: "Gehadali.egy@gmail.com",
   },
   // Shown in the footer. Update by hand whenever you make a real update.
@@ -86,10 +86,10 @@ const CERTIFICATES = [];
 /** Courses / certifications on the roadmap but not finished yet. */
 const PLANNED_CERTIFICATES = [
   { name: "Foundations of Software Testing and Validation", provider: "Coursera" },
-  { name: "Manual Testing Course", provider: "Udemy" },
-  { name: "The Complete 2026 Software Testing Bootcamp", provider: "Udemy" },
+  { name: "Manual Testing Course", provider: "" },
+  { name: "The Complete 2026 Software Testing Bootcamp", provider: "" },
   { name: "Software Testing Diploma", provider: "Route Academy" },
-  { name: "ISTQB Foundation", provider: "Planned" },
+  { name: "ISTQB Foundation", provider: "if completed" },
 ];
 
 /* ---------- Helpers ---------- */
@@ -156,15 +156,12 @@ function wireAnalyticsEvents() {
     window.heronsignal?.event("cta_click", { cta, location });
   };
 
-  document.querySelector('.hero-actions a[href="#projects"]')?.addEventListener("click", () => {
-    window.heronsignal?.event("projects_viewed", { source: "hero" });
-  });
-
   const bindings = [
     { selector: '.hero-actions a[href="#projects"]', cta: "view_projects", location: "hero" },
     { selector: '.hero-actions a[data-social="github"]', cta: "github", location: "hero" },
     { selector: '.hero-actions a[data-social="linkedin"]', cta: "linkedin", location: "hero" },
     { selector: '.nav-cta[data-social="github"]', cta: "github", location: "nav" },
+    { selector: '.nav-icon[data-social="linkedin"]', cta: "linkedin", location: "nav" },
     { selector: '#github .btn[data-social="github"]', cta: "github", location: "github_section" },
     { selector: '.contact-card[data-social="linkedin"]', cta: "linkedin", location: "contact" },
     { selector: '.contact-card[data-social="github"]', cta: "github", location: "contact" },

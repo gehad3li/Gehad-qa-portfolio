@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gehad — Aspiring Software QA Engineer</title>
   <meta name="description" content="Gehad's QA portfolio — documenting a hands-on journey from software testing fundamentals toward a first role as a Software QA Engineer." />
-  <meta name="theme-color" content="#1B2430" />
+  <meta name="theme-color" content="#0B0F17" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://gehad3li.github.io/Gehad-qa-portfolio/" />
@@ -30,16 +30,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-
-  <script>
-    window.heronsignalConfig = {
-      publicKey: "pk_KbmDm5b9SbmBzBxLiESMaQA1IXWqfMpV"
-    };
-  </script>
-  <script src="https://api.heronsignal.com/tracker.js" async></script>
 
   <!-- Structured data: Person / ProfilePage, built only from content already on this page -->
   <script type="application/ld+json">
@@ -53,11 +46,8 @@
       "name": "Gehad",
       "description": "Aspiring Software QA Engineer currently building a foundation in software testing and quality assurance through structured learning and practical projects.",
       "url": "https://gehad3li.github.io/Gehad-qa-portfolio/",
-      "sameAs": [
-        "https://github.com/gehad3li",
-        "https://www.linkedin.com/in/gehadali/"
-      ],
-      "knowsAbout": ["Software Testing Fundamentals", "Manual Testing"]
+      "knowsAbout": ["Software Testing Fundamentals", "Manual Testing"],
+      "sameAs": ["https://github.com/gehad3li"]
     }
   }
   </script>
@@ -85,7 +75,12 @@
         <a href="#journey">Journey</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://github.com/gehad3li" data-social="github" target="_blank" rel="noopener">GitHub</a>
+        <span class="nav-social">
+          <a class="nav-icon" href="#" data-social="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.44 13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.82c.04.94 0 12 0 12h3.38v-6.7c0-.36.03-.72.13-.97.29-.72.94-1.47 2.04-1.47 1.44 0 2.02 1.1 2.02 2.71V20.5h3.38l.03-6.6Z"/></svg>
+          </a>
+          <a class="nav-cta" href="https://github.com/gehad3li" data-social="github" target="_blank" rel="noopener">GitHub</a>
+        </span>
       </nav>
     </div>
   </header>
@@ -94,27 +89,62 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="wrap hero-inner">
-        <p class="eyebrow mono"><span class="status-dot status-dot--progress" aria-hidden="true"></span>status: learning in public</p>
-        <h1 class="hero-title">
-          Gehad
-          <span class="hero-title-sub">Aspiring Software QA Engineer</span>
-        </h1>
-        <p class="hero-desc">
-          Currently building my foundation in Software Testing and Quality Assurance
-          through structured learning and practical projects.
-        </p>
+      <div class="hero-glow hero-glow--teal" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--rose" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow mono"><span class="status-dot status-dot--progress" aria-hidden="true"></span>status: learning in public</p>
+          <h1 class="hero-title">
+            Gehad
+            <span class="hero-title-sub">Aspiring Software QA Engineer</span>
+          </h1>
+          <p class="hero-desc">
+            Currently building my foundation in Software Testing and Quality Assurance
+            through structured learning and practical projects.
+          </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View my projects</a>
-          <a href="https://github.com/gehad3li" data-social="github" target="_blank" rel="noopener" class="btn btn-ghost">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.19-3.37-1.19-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/gehadali/" data-social="linkedin" target="_blank" rel="noopener" class="btn btn-ghost">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.44 13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.82c.04.94 0 12 0 12h3.38v-6.7c0-.36.03-.72.13-.97.29-.72.94-1.47 2.04-1.47 1.44 0 2.02 1.1 2.02 2.71V20.5h3.38l.03-6.6Z"/></svg>
-            LinkedIn
-          </a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="https://github.com/gehad3li" data-social="github" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.19-3.37-1.19-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              GitHub
+            </a>
+            <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.44 13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.82c.04.94 0 12 0 12h3.38v-6.7c0-.36.03-.72.13-.97.29-.72.94-1.47 2.04-1.47 1.44 0 2.02 1.1 2.02 2.71V20.5h3.38l.03-6.6Z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="run-panel">
+            <div class="run-panel-bar">
+              <span class="run-dot run-dot--a"></span>
+              <span class="run-dot run-dot--b"></span>
+              <span class="run-dot run-dot--c"></span>
+              <span class="run-panel-title mono">qa_run.log</span>
+              <span class="run-panel-tag mono">QA / v0.1</span>
+            </div>
+            <div class="run-panel-scan" aria-hidden="true"></div>
+            <ul class="run-list mono">
+              <li class="run-row run-row--pass">
+                <span class="run-id">TC-01</span>
+                <span class="run-name">login_flow_validation</span>
+                <span class="run-status">Passed</span>
+              </li>
+              <li class="run-row run-row--progress">
+                <span class="run-id">TC-02</span>
+                <span class="run-name">form_field_boundaries</span>
+                <span class="run-status">In Progress</span>
+              </li>
+              <li class="run-row run-row--queued">
+                <span class="run-id">TC-03</span>
+                <span class="run-name">navigation_regression</span>
+                <span class="run-status">Queued</span>
+              </li>
+            </ul>
+            <p class="run-panel-caption mono">sample test case structure — illustrative</p>
+          </div>
         </div>
       </div>
     </section>
@@ -124,15 +154,17 @@
       <div class="wrap section-inner section-inner--narrow">
         <p class="eyebrow mono">01 / about</p>
         <h2 id="about-title" class="section-title">About me</h2>
-        <p class="about-text">
-          I'm currently transitioning into Software Quality Assurance. I don't have
-          professional QA experience yet — what I do have is a structured learning plan,
-          consistent daily study, and a habit of testing things thoroughly by nature.
-          I'm building my knowledge in software testing step by step: starting with
-          fundamentals and manual testing, then working toward API testing, SQL, and
-          test automation. This site is where I'll document that progress honestly,
-          project by project.
-        </p>
+        <div class="about-card">
+          <p class="about-text">
+            I'm currently transitioning into Software Quality Assurance. I don't have
+            professional QA experience yet — what I do have is a structured learning plan,
+            consistent daily study, and <em class="accent-italic">a habit of testing things
+            thoroughly by nature</em>. I'm building my knowledge in software testing step by
+            step: starting with fundamentals and manual testing, then working toward API
+            testing, SQL, and test automation. This site is where I'll document that
+            progress honestly, project by project.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -225,7 +257,7 @@
         <p class="section-lede">Open to conversations about junior QA opportunities, or just about testing.</p>
 
         <div class="contact-grid">
-          <a class="contact-card" href="https://www.linkedin.com/in/gehadali/" data-social="linkedin" target="_blank" rel="noopener">
+          <a class="contact-card" href="#" data-social="linkedin" target="_blank" rel="noopener">
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20.5H6.94V8.5ZM5.25 3.5A1.96 1.96 0 1 0 5.27 7.42 1.96 1.96 0 0 0 5.25 3.5ZM20.44 13.9c0-3.26-1.74-4.78-4.06-4.78a3.5 3.5 0 0 0-3.18 1.75V8.5H9.82c.04.94 0 12 0 12h3.38v-6.7c0-.36.03-.72.13-.97.29-.72.94-1.47 2.04-1.47 1.44 0 2.02 1.1 2.02 2.71V20.5h3.38l.03-6.6Z"/></svg>
             <span>
               <strong>LinkedIn</strong>
@@ -245,7 +277,7 @@
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.5h18a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Zm.6 1.7v.02L12 13.2l8.4-6v-.02H3.6ZM20.5 8.9l-8.15 5.82a.9.9 0 0 1-1.05 0L3.5 8.9v8.4h17V8.9Z"/></svg>
             <span>
               <strong>Email</strong>
-              <small id="emailLabel">your.email@example.com</small>
+              <small id="emailLabel">Gehadali.egy@gmail.com</small>
             </span>
           </a>
         </div>
@@ -262,5 +294,21 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!--
+    HeronSignal real-user monitoring.
+    Replace "YOUR_HERONSIGNAL_PUBLIC_KEY" below with the public key from your
+    HeronSignal dashboard (Dashboard → Install → Web). This key is public by
+    design (it's meant to ship in browser HTML) — do not put a secret/server
+    token here.
+  -->
+  <script>
+    window.heronsignalConfig = {
+      publicKey: "YOUR_HERONSIGNAL_PUBLIC_KEY",
+      service: "gehad-qa-portfolio",
+      environment: "production"
+    };
+  </script>
+  <script src="https://api.heronsignal.com/tracker.js" async></script>
 </body>
 </html>
