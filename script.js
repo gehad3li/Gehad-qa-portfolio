@@ -156,6 +156,10 @@ function wireAnalyticsEvents() {
     window.heronsignal?.event("cta_click", { cta, location });
   };
 
+  document.querySelector('.hero-actions a[href="#projects"]')?.addEventListener("click", () => {
+    window.heronsignal?.event("projects_viewed", { source: "hero" });
+  });
+
   const bindings = [
     { selector: '.hero-actions a[href="#projects"]', cta: "view_projects", location: "hero" },
     { selector: '.hero-actions a[data-social="github"]', cta: "github", location: "hero" },
